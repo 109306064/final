@@ -10,10 +10,10 @@ We want to build a search engine just for movie lovers or people who want to sea
 * supports four languages - ZH, EN, JP, KR
 
 ### System design logic
-1. Keyword setting
-    Words that means "movie" have the highest weight; 
-    words that are about movie have the lowest weight; 
-    words that are related to "movie" are in between.
+1. Keyword setting <br>
+    Words that means "movie" have the highest weight; <br>
+    words that are about movie have the lowest weight; <br>
+    words that are related to "movie" are in between. <br>
 2. Class building
 * `KeywordList` creates and stores various preset keywords for page revaluation
 * `Keyword` contains two attributes: name, weight
