@@ -63,15 +63,21 @@ IV. Server redirected too many times (20)
 
 ### Test Plans
 We have complete the test plans below and fixed some problems listed above.
-√ Walk-through
+
+√ **Walk-through: **
 	fixed some typing errors during this process
-√ Desk checking
+
+√ **Desk checking: **
 	be more clear about our design logic during this process
-√ Unit testing
+
+√ **Unit testing: **
 	test the methods in `GoogleQuery` and encountered some IO Exception problems
-√ Integration testing
+
+√ **Integration testing: **
 	run the whole project on the server and no problems are discovered
-√ Performance test
-	examine the response time for the proper anount of searching results and found out that the best quality is to run 30 results in one go
-√ Alpha test
+
+√ **Performance test: **
+	examine the response time for the proper amount of searching results → the best quality is to run 30 results in one go
+
+√ **Alpha test: **
 	use various search keywords to simulate the usage senarios
