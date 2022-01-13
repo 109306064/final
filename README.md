@@ -1,8 +1,8 @@
 # [Data Structure] Final Project
 
 ### Motivation
-Google's results are not just about movies → Create a prioritizing system
-We want to build a search engine just for movie lovers or people who wants to search for information related to movies.
+Google's results are not just about movies → Create a prioritizing system <br>
+We want to build a search engine just for movie lovers or people who want to search for information related to movies.
 
 ### Function
 * gives results about "movie" no matter what kind of words you key in
@@ -11,9 +11,9 @@ We want to build a search engine just for movie lovers or people who wants to se
 
 ### System design logic
 1. Keyword setting
-    Words that means "movie" have the highest weight, 
-    words that are about movie have the lowest weight, 
-    words that are related to "movie" are in betweenn.
+    Words that means "movie" have the highest weight; 
+    words that are about movie have the lowest weight; 
+    words that are related to "movie" are in between.
 2. Class building
 * `KeywordList` creates and stores various preset keywords for page revaluation
 * `Keyword` contains two attributes: name, weight
