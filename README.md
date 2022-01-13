@@ -1,9 +1,20 @@
 # [Data Structure] Final Project
+
+### Motivation
+Google's results are not just about movies → Create a prioritizing system
+We want to build a search engine just for movie lovers or people who wants to search for information related to movies.
+
 ### Function
 * gives results about "movie" no matter what kind of words you key in
 * sorts in different categories and provides you the most related content
 
-### Class Logic
+
+### System design logic
+1. Keyword setting
+    Words that means "movie" have the highest weight, 
+    words that are about movie have the lowest weight, 
+    words that are related to "movie" are in betweenn.
+2. Class building
 * `KeywordList` creates and stores various preset keywords for page revaluation
 * `Keyword` contains two attributes: name, weight
 * `GoogleQuery` connects google and parse down HTML contents for page revaluation.
@@ -13,7 +24,7 @@
 * `Main` is the main class and connects all required classes
 
 ### Encountered Problems
-→ Mostly IO Exceptions
+Mostly IO Exceptions problems.
 
 I. Server response 400 bad request
 	add the code segment below to format the target URL
@@ -49,3 +60,18 @@ IV. Server redirected too many times (20)
 	
 		HttpURLConnection.setFollowRedirects(false);
 		HttpURLConnection conn = (HttpURLConnection) u.openConnection();
+
+### Test Plans
+We have complete the test plans below and fixed some problems listed above.
+√ Walk-through
+	fixed some typing errors during this process
+√ Desk checking
+	be more clear about our design logic during this process
+√ Unit testing
+	test the methods in `GoogleQuery` and encountered some IO Exception problems
+√ Integration testing
+	run the whole project on the server and no problems are discovered
+√ Performance test
+	examine the response time for the proper anount of searching results and found out that the best quality is to run 30 results in one go
+√ Alpha test
+	use various search keywords to simulate the usage senarios
