@@ -7,7 +7,7 @@ We want to build a search engine just for movie lovers or people who wants to se
 ### Function
 * gives results about "movie" no matter what kind of words you key in
 * sorts in different categories and provides you the most related content
-
+* supports four languages - ZH, EN, JP, KR
 
 ### System design logic
 1. Keyword setting
